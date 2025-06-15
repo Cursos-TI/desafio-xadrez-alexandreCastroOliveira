@@ -41,5 +41,25 @@ int main() {
         casasRainha++;
     } while (casasRainha < 8);
 
+    /*CAVALO
+    O cavalo pode se mover em forma de L, ou seja, 2 casas na vertical ou horizontal e mais 1 casa
+    perpendicular a direção escolhida anteriormente.
+    
+    Vou utilizar o loop FOR para movimentar as 2 casas, para baixo e o loop WHILE,
+    para mover para 1 casa perpendicular para a esquerda*/
+    
+    printf("\nMovimento do Cavalo:\n");
+    int casasCavalo = 2;
+    
+    for (int cavalo = 0; cavalo <= casasCavalo; cavalo++) {
+        printf("Baixo\n");
+        casasCavalo--;    
+    }
+
+    while (casasCavalo == 0) {
+        printf("Esquerda\n");
+        casasCavalo = casasCavalo + 2;
+    }
+
     return 0;
 }
