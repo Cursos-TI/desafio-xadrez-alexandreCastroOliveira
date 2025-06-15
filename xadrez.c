@@ -46,19 +46,21 @@ int main() {
     perpendicular a direção escolhida anteriormente.
     
     Vou utilizar o loop FOR para movimentar as 2 casas, para baixo e o loop WHILE,
-    para mover para 1 casa perpendicular para a esquerda*/
+    para mover para 1 casa perpendicular para a esquerda
+    Os loops estão aninhados, como pedido*/
     
     printf("\nMovimento do Cavalo:\n");
     int casasCavalo = 2;
     
     for (int cavalo = 0; cavalo <= casasCavalo; cavalo++) {
         printf("Baixo\n");
-        casasCavalo--;    
-    }
-
-    while (casasCavalo == 0) {
-        printf("Esquerda\n");
-        casasCavalo = casasCavalo + 2;
+        casasCavalo--;
+          
+        while (cavalo == 1) {
+            printf("Esquerda\n");
+            casasCavalo = casasCavalo + 2;
+            cavalo ++;
+        }
     }
 
     return 0;
